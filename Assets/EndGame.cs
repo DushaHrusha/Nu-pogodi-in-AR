@@ -7,7 +7,6 @@ public class EndGame : MonoBehaviour
     public int EggWinCount { get; private set; } = 10;
     public int WolfHP {get; private set ;} = 5;
     public event Action GameEndedEvent;
-    public WolfDamage wolfDamage;
     public Bag bag;
     public GameObject WinPanel;
     public GameObject EndPanel;
@@ -24,14 +23,14 @@ public class EndGame : MonoBehaviour
     private void OnEnable()
     {
         bag.EggCountChangedEvent += TakeEgg;
-        wolfDamage.WolfTookDamageEvent += TakeWolfDamage;
+        bag.WolfTookDamageEvent += TakeWolfDamage;
         Debug.Log("Ивенты добавлены");
     }
 
     private void OnDisable()
     {
         bag.EggCountChangedEvent -= TakeEgg;
-        wolfDamage.WolfTookDamageEvent -= TakeWolfDamage;
+        bag.WolfTookDamageEvent -= TakeWolfDamage;
     }
 
     public void TakeWolfDamage()
