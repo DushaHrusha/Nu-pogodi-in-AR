@@ -51,5 +51,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Nu-pogodi-in-AR.sln"
+    "dotnet.defaultSolution": "Nu-pogodi-in-AR.sln",
+    "FSharp.suggestGitignore": false
 }

@@ -15,6 +15,7 @@ public class InitEgg : MonoBehaviour
     }
     private void Start()
     {
+        StartCoroutine(InitEggRandom());
         eggs = new GameObject[]{_witheEgg, _blackEgg};
     }
     private IEnumerator InitEggRandom()

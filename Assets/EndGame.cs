@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EndGame : MonoBehaviour 
 {
-    public int EggWinCount { get; private set; } = 10;
+    public int EggWinCount { get; private set; } = 15;
     public int WolfHP {get; private set ;} = 5;
     public event Action GameEndedEvent;
     public Bag bag;
