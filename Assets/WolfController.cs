@@ -17,11 +17,11 @@ public class WolfController : MonoBehaviour
 
     public void Right()
     {
-        transform.rotation = Quaternion.Euler(0, 180, 0);
+        transform.localRotation = Quaternion.Euler(0, 180, 0);
     }
 
     public void Left()
     {
-        transform.rotation = Quaternion.Euler(0, 0, 0);
+        transform.localRotation = Quaternion.Euler(0, 0, 0);
     }
 }

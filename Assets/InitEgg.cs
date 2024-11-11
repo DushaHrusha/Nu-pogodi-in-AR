@@ -9,9 +9,12 @@ public class InitEgg : MonoBehaviour
     [SerializeField] private EndGame endGame;
     private GameObject[] eggs;
 
-    private void Start()
+    public void StartInit()
     {
         StartCoroutine(InitEggRandom());
+    }
+    private void Start()
+    {
         eggs = new GameObject[]{_witheEgg, _blackEgg};
     }
     private IEnumerator InitEggRandom()
